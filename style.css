@@ -96,7 +96,8 @@ span b {
 
 @media screen and (max-width: 786px) {
   body {
-    background-color: black;
+    overflow: hidden;
+    width: 100%;
   }
   .bg-pattern-bottom,
   .bg-pattern-top {
@@ -106,13 +107,5 @@ span b {
   .main_container {
     width: 90%;
     height: 90%;
-  }
-}
-@media screen and (max-height: 500px) {
-  body {
-    overflow-y: scroll;
-  }
-  .main_container {
-    height: 600px;
   }
 }
