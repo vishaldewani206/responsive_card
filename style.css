@@ -1,6 +1,10 @@
 * {
   font-family: "Kumbh Sans", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
+
 .attribution {
   position: absolute;
   bottom: 0;
@@ -14,8 +18,10 @@
 body {
   background-color: hsl(185, 75%, 39%);
   overflow: hidden;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
+
+  position: relative;
 }
 .bg-pattern-top {
   z-index: -1;
@@ -90,15 +96,12 @@ span b {
   position: relative;
   bottom: 0;
   display: flex;
+
   justify-content: space-between;
   align-items: center;
 }
 
 @media screen and (max-width: 786px) {
-  body {
-    overflow: hidden;
-    width: 100%;
-  }
   .bg-pattern-bottom,
   .bg-pattern-top {
     width: 500px;
